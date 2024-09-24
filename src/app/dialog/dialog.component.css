@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.key {
+  grid-column: span 2 / span 2;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+.value {
+  grid-column: span 4 / span 4;
+  text-wrap: pretty;
+}
+
+button {
+  width: 100% !important;
+  background-color: rgb(240, 164, 202) !important;
+  color: white !important;
+}

@@ -1,0 +1,15 @@
+<mat-toolbar>
+  <span class="logo" (click)='goTo()'>Customer Manager</span>
+  <span class="example-spacer"></span>
+  <div class="example-button-container">
+    <mat-form-field class="example-full-width" style="margin-bottom: -1.25em ">
+      <mat-label>Search</mat-label>
+      <input class="search" type="text" [(ngModel)]="searchTerm" (input)="onSearch()" (keyup)="onSearch()" matInput
+        placeholder="Search...">
+    </mat-form-field>
+    <button (click)="goTo()" mat-fab extended>
+      <mat-icon>add</mat-icon>
+      New
+    </button>
+  </div>
+</mat-toolbar>
